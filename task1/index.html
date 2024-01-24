@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Our E-commerce Store</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Customer Reviews</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Featured Products</h2>
+
+        <p id="product-description" class="highlight">Explore our latest collection of gadgets and accessories.</p>
+
+        <img src="product-image.webp" alt="Product Image" style="max-width: 100%; height: auto; margin-top: 15px;">
+        <br>
+        <button onclick="addToCart()">Add to Cart</button>
+    </section>
+
+    <section>
+        <h2>Top Sellers</h2>
+
+        <ul>
+            <li>Laptop</li>
+            <li>Smartphone</li>
+            <li>Wireless Headphones</li>
+        </ul>
+
+        <p>Check out our top-selling products and grab them before they run out of stock!</p>
+
+        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </section>
+
+    <section>
+        <h2>Customer Reviews</h2>
+
+        <table>
+            <caption>Customer Feedback</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Review</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Excellent service! Will buy again.</td>
+                    <td>5/5</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Fast shipping and great quality products.</td>
+                    <td>4/5</td>
+                </tr>
+                <tr>
+                    <td>Robert Johnson</td>
+                    <td>Impressed with the customer support. They were very helpful!</td>
+                    <td>5/5</td>
+                </tr>
+                <tr>
+                    <td>Amy Taylor</td>
+                    <td>Product exceeded my expectations. Highly recommended!</td>
+                    <td>4.5/5</td>
+                </tr>
+                <tr>
+                    <td>Chris Anderson</td>
+                    <td>Smooth transaction and on-time delivery. Satisfied customer!</td>
+                    <td>4/5</td>
+                </tr>
+                <tr>
+                    <td>Megan Brown</td>
+                    <td>Great variety of products. Found exactly what I was looking for.</td>
+                    <td>4.5/5</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <p>Thank You <br> Visit again!</p>
+    </footer>
+
+    <script>
+        function addToCart() {
+            alert("Product added to cart!");
+        }
+    </script>
+
+</body>
+
+</html>
