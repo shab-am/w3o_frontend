@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SVG, Canvas, and Media Example</title>
+<style>
+  .container {
+    text-align: center;
+  }
+  .item {
+    display: flex;
+    margin: 20px 0; /* Adjusted margin */
+  }
+  #myCanvas{
+     width: 100%;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- SVG -->
+  <div class="item">
+    <svg width="200" height="200">
+      <!-- Circle -->
+      <circle cx="100" cy="80" r="80" fill="red" />
+<!-- Rectangle -->
+<rect x="0" y="180" width="200" height="20" fill="blue" />
+<!-- Line -->
+<line x1="10" y1="170" x2="190" y2="170" stroke="green" />
+
+    </svg>
+  </div>
+
+  <!-- Canvas -->
+  <div class="item">
+    <canvas id="myCanvas"></canvas>
+  </div>
+
+  <!-- Media -->
+  <div class="item">
+    <audio controls>
+      <source src="example.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <video width="320" height="240" controls>
+      <source src="example.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<script>
+  const canvas = document.getElementById('myCanvas');
+  const ctx = canvas.getContext('2d');
+  
+  // Draw rectangle
+  ctx.fillStyle = 'red';
+  ctx.fillRect(10, 10, 50, 50);
+  
+  // Draw circle
+  ctx.beginPath();
+  ctx.arc(38, 95, 30, 0, 2 * Math.PI);
+  ctx.fillStyle = 'blue';
+  ctx.fill();
+  
+  // Draw line
+  ctx.beginPath();
+  ctx.moveTo(10, 135);
+  ctx.lineTo(135, 135);
+  ctx.strokeStyle = 'green';
+  ctx.lineWidth = 5;
+  ctx.stroke();
+  
+  // Draw triangle
+  ctx.beginPath();
+  ctx.moveTo(80, 10);
+  ctx.lineTo(140, 10);
+  ctx.lineTo(100, 70);
+  ctx.closePath();
+  ctx.fillStyle = 'orange';
+  ctx.fill();
+</script>
+
+</body>
+</html>
