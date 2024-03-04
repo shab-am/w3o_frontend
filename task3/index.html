@@ -12,7 +12,7 @@
     display: flex;
     margin: 20px 0; /* Adjusted margin */
   }
-  #myCanvas{
+  #myCanvas {
      width: 100%;
   }
 </style>
@@ -20,25 +20,27 @@
 <body>
 
 <div class="container">
-  <!-- SVG -->
+  <!-- Elements using SVG -->
+  <h2>Elements using SVG</h2>
   <div class="item">
     <svg width="200" height="200">
       <!-- Circle -->
       <circle cx="100" cy="80" r="80" fill="red" />
-<!-- Rectangle -->
-<rect x="0" y="180" width="200" height="20" fill="blue" />
-<!-- Line -->
-<line x1="10" y1="170" x2="190" y2="170" stroke="green" />
-
+      <!-- Rectangle -->
+      <rect x="0" y="180" width="200" height="20" fill="blue" />
+      <!-- Line -->
+      <line x1="10" y1="170" x2="190" y2="170" stroke="green" />
     </svg>
   </div>
 
-  <!-- Canvas -->
+  <!-- Elements using canvas -->
+  <h2>Elements using Canvas</h2>
   <div class="item">
     <canvas id="myCanvas"></canvas>
   </div>
 
-  <!-- Media -->
+  <!-- Audio/Video Elements -->
+  <h2>Audio/Video Elements</h2>
   <div class="item">
     <audio controls>
       <source src="example.mp3" type="audio/mpeg">
